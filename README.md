@@ -61,7 +61,7 @@ const { chromium } = require('playwright');
 ```
 
 4. **Proxy implementation**. To use proxies with Playwright, you can pass proxy settings through the browser's _launch_ or [_launchPersistentContext_](https://playwright.dev/docs/api/class-browsertype) options. Playwright supports proxy integration via the proxy object, which accepts the proxy server URL.
-   See the full file here.
+   [See the full file here](https://github.com/Smartproxy/Playwright/blob/main/playwright.js).
 7. **Run the script**. While in your project folder, run the following command:
 
 `node playwright.js`
