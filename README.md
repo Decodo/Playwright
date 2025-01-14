@@ -60,15 +60,18 @@ const { chromium } = require('playwright');
 })();
 ```
 
-4. **Proxy implementation**. To use proxies with Playwright, you can pass proxy settings through the browser's _launch_ or [_launchPersistentContext_](https://playwright.dev/docs/api/class-browsertype) options. Playwright supports proxy integration via the proxy object, which accepts the proxy server URL. See the full file here.
-5. **Run the script**. While in your project folder, run the following command:
+4. **Proxy implementation**. To use proxies with Playwright, you can pass proxy settings through the browser's _launch_ or [_launchPersistentContext_](https://playwright.dev/docs/api/class-browsertype) options. Playwright supports proxy integration via the proxy object, which accepts the proxy server URL.
+   See the full file here.
+7. **Run the script**. While in your project folder, run the following command:
 
 `node playwright.js`
 
 This script does several things – first, it connects to a proxy server to make future requests through a different IP address. Then, it makes a request to the Smartproxy IP-checker website to print your IP address to check if the connection is coming from a different address from your own. Finally, it makes the same request to the ScrapeMe website that prints the 3rd element from the product page.
 
+If you did everything correctly, you should see the following result in your terminal:
+![playwright-does-magic-wow](https://github.com/user-attachments/assets/ee9d9b00-c2cf-4f77-b33b-76e9bc7ff839)
+
 ## Need help?
 
 Email - sales@smartproxy.com
 <br><a href="https://smartproxy.com">Live chat 24/7</a>
-
