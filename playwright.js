@@ -2,7 +2,7 @@ const { chromium } = require('playwright');
 
 (async () => {
   // Proxy server
-  const proxy = 'gate.smartproxy.com:10001';
+  const proxy = 'gate.decodo.com:10001';
 
   // Launch a new browser instance with proxy settings
   const browser = await chromium.launch({
@@ -24,7 +24,7 @@ const { chromium } = require('playwright');
   const page = await context.newPage();
 
   // Check IP on the same page by navigating to the IP check URL
-  await page.goto('https://ip.smartproxy.com/ip');
+  await page.goto('https://ip.decodo.com/ip');
   const content = await page.evaluate(() => document.body.innerText);
   console.log(`Your IP: ${content}`);
 
