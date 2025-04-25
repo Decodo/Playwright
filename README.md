@@ -70,8 +70,10 @@ const { chromium } = require('playwright');
 This script does several things – first, it connects to a proxy server to make future requests through a different IP address. Then, it makes a request to the Decodo IP-checker website to print your IP address to check if the connection is coming from a different address from your own. Finally, it makes the same request to the ScrapeMe website that prints the 3rd element from the product page.
 
 If you did everything correctly, you should see the following result in your terminal:
-![playwright-does-magic-wow](https://github.com/user-attachments/assets/ee9d9b00-c2cf-4f77-b33b-76e9bc7ff839)
-
+```
+Your IP: 93.150.224.248
+3rd Product Title: Venusaur
+```
 ## Need help?
 
 Email - sales@decodo.com
